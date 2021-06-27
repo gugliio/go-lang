@@ -3,30 +3,51 @@ package main
 import "fmt"
 
 func main() {
-	// Constantes
-	const PI float64 = 3.14
-	const PI2 = 3.1415
+	x := 10
+	y := 50
 
-	fmt.Println("Pi", PI)
-	fmt.Println("Pi", PI2)
+	// Suma
+	result := x + y
+	fmt.Println("Suma", result)
 
-	//Var Int
-	base := 12
-	var altura int = 14
-	var area int
+	// Resta
+	result = y - x
+	fmt.Println("Resta", result)
 
-	fmt.Println("Base", base, "Altura", altura, "Area", area)
+	// Multiplicar
+	result = x * y
+	fmt.Println("Multiplicar", result)
 
-	//Zero Values
-	var a int
-	var b float64
-	var c string
-	var d bool
+	// Division
+	result = y / x
+	fmt.Println("Division", result)
 
-	fmt.Println(a, b, c, d)
+	// Modulo
+	result = y % x
+	fmt.Println("Modulo", result)
 
-	//Area de un cuadrado
-	const BASECUADRADO = 10
-	areaCuadrado := BASECUADRADO * BASECUADRADO
-	fmt.Println("Area Cuadrado", areaCuadrado)
+	// Incremental
+	x++
+	fmt.Println("Incremental", x)
+
+	// Decremento
+	x--
+	fmt.Println("Decremento", x)
+
+	//Area rectangulo
+	baseRectangulo := 10
+	alturaRectangulo := 15
+	fmt.Println("Area Rect", baseRectangulo*alturaRectangulo)
+
+	//Area trapecio
+	baseUno := 10
+	baseDos := 30
+	altura := 50
+
+	fmt.Println("Area Trapecio", ((baseUno+baseDos)*altura)/2)
+
+	//Area circulo
+	const PI = 3.14
+	var radio float64 = 10
+	fmt.Println("Area Circulo", PI*(radio*radio))
 }
