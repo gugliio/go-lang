@@ -15,5 +15,6 @@ Conocimientos basicos de Go lang.
 - Interfaces, Structs
 - Funciones
 - Go Routines, Channels
+- Modules
 ```
 
