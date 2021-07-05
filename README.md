@@ -1,7 +1,7 @@
 
 # Go Lang
 
-Cursos de Go lang de Platzi
+Cursos de Go Lang
 
 ## Curso Go Bases
 
