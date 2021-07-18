@@ -27,5 +27,8 @@ Curso de conocimientos intermedios de Go lang.
 
 ```bash
 /curso-intermedio/
+- Repaso inicial variables, maps, slices, goroutines, channels y punteros
+- Struct vs Clases
+
 ```
 
