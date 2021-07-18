@@ -19,3 +19,13 @@ Conocimientos basicos de Go lang.
 - Echo Framework
 ```
 
+## Curso Go Intermedio
+
+Curso de conocimientos intermedios de Go lang. 
+
+(Incluye programacion orientada a objetos, test unitarios y concurrencia en Go)
+
+```bash
+/curso-intermedio/
+```
+
