@@ -30,6 +30,7 @@ Curso de conocimientos intermedios de Go lang.
 - Repaso inicial variables, maps, slices, goroutines, channels y punteros
 - Struct, metodos, funciones 
 - Constructores
+- Herencia y Polimorfismo
 
 ```
 
