@@ -8,7 +8,7 @@ Cursos de Go Lang
 Conocimientos basicos de Go lang.
 
 ```bash
-/curso-basico/src
+/curso-basico/
 
 - Tipos de Datos
 - If, For, Switch
