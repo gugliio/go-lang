@@ -36,6 +36,53 @@ func (SMSNotificationSender) GetSenderChannel() string {
 	return "Channel SMS"
 }
 
-func main() {
+type EmailNotification struct {
+}
 
+func (EmailNotification) SendNotification() {
+	fmt.Println("Se envio la notificacion via Email")
+}
+
+func (EmailNotification) GetSender() ISender {
+	return EmailNotificationSender{}
+}
+
+type EmailNotificationSender struct {
+}
+
+func (EmailNotificationSender) GetSenderMethod() string {
+	return "Email"
+}
+
+func (EmailNotificationSender) GetSenderChannel() string {
+	return "Channel Email"
+}
+
+func getNotificationFactory(notificacion string) (INotificationFactory, error) {
+	if notificacion == "SMS" {
+		return SMSNotification{}, nil
+	}
+	if notificacion == "Email" {
+		return EmailNotification{}, nil
+	}
+	return nil, fmt.Errorf("No Notification Type")
+}
+
+func sendNotification(f INotificationFactory) {
+	f.SendNotification()
+}
+
+func getMethod(f INotificationFactory) {
+	fmt.Println(f.GetSender().GetSenderMethod())
+}
+
+func main() {
+	smsFactory, _ := getNotificationFactory("SMS")
+	emailFactory, _ := getNotificationFactory("Email")
+
+	sendNotification(smsFactory)
+	sendNotification(emailFactory)
+
+	getMethod(smsFactory)
+	getMethod(emailFactory)
 }
