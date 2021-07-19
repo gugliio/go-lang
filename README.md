@@ -31,6 +31,8 @@ Curso de conocimientos intermedios de Go lang.
 - Struct, metodos, funciones 
 - Constructores
 - Herencia y Polimorfismo
+- Interfaces
+- Abstract Factory
 
 ```
 
