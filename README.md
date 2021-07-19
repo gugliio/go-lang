@@ -33,7 +33,6 @@ Curso de conocimientos intermedios de Go lang.
 - Herencia y Polimorfismo
 - Interfaces
 - Abstract Factory
-- Funciones Anonimas
-
+- Funciones Anonimas, funciones variadicas y retornos con nombre
 ```
 
