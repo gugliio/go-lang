@@ -24,5 +24,3 @@ func TestSum(t *testing.T) {
 		}
 	}
 }
-
-func TestGetMax(t *testing.T)
