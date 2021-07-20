@@ -27,12 +27,14 @@ Curso de conocimientos intermedios de Go lang.
 
 ```bash
 /curso-intermedio/
-- Repaso inicial variables, maps, slices, goroutines, channels y punteros
+- Repaso inicial variables, maps, slices
+- Goroutines, channels y punteros
 - Struct, metodos, funciones 
 - Constructores
 - Herencia y Polimorfismo
 - Interfaces
 - Abstract Factory
-- Funciones Anonimas, funciones variadicas y retornos con nombre
+- Funciones Anonimas
+- Funciones variadicas y retornos con nombre
 ```
 
