@@ -43,3 +43,22 @@ func TestGetMax(t *testing.T) {
 		}
 	}
 }
+
+func TestFib(t *testing.T) {
+	tables := []struct {
+		a int
+		n int
+	}{
+		{1, 1},
+		{8, 21},
+		{49, 7778742049},
+	}
+
+	for _, item := range tables {
+		fibonacci := Fibonacci(item.a)
+		if fibonacci != item.n {
+			t.Errorf("Error en el test de fibonacci. Tuvimos un resultado de %d se esperaba %d", fibonacci, item.n)
+		}
+	}
+
+}

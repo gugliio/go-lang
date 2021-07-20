@@ -38,5 +38,6 @@ Curso de conocimientos intermedios de Go lang.
 - Funciones variadicas y retornos con nombre
 - Go Modules (Test Module)
 - Test unitarios, Code Coverage
+- Profiling
 ```
 
