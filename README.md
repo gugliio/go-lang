@@ -36,5 +36,6 @@ Curso de conocimientos intermedios de Go lang.
 - Abstract Factory
 - Funciones Anonimas
 - Funciones variadicas y retornos con nombre
+- Go Modules
 ```
 
