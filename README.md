@@ -40,5 +40,6 @@ Curso de conocimientos intermedios de Go lang.
 - Test unitarios, Code Coverage
 - Profiling
 - Mocks
+- Channels y Buffer
 ```
 
