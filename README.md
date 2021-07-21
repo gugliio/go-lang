@@ -39,5 +39,6 @@ Curso de conocimientos intermedios de Go lang.
 - Go Modules (Test Module)
 - Test unitarios, Code Coverage
 - Profiling
+- Mocks
 ```
 
