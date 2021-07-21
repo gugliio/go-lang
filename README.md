@@ -41,5 +41,6 @@ Curso de conocimientos intermedios de Go lang.
 - Profiling
 - Mocks
 - Channels y Buffer
+- Waitgroup
 ```
 
