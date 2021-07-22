@@ -1,7 +1,7 @@
 
 # Go Lang
 
-Cursos de Go Lang
+Cursos de Go Lang (2021)
 
 ## Curso Go Bases
 
@@ -30,17 +30,13 @@ Curso de conocimientos intermedios de Go lang.
 - Repaso inicial variables, maps, slices
 - Goroutines, channels y punteros
 - Struct, metodos, funciones 
-- Constructores
+- Constructores, interfaces
 - Herencia y Polimorfismo
-- Interfaces
 - Abstract Factory
-- Funciones Anonimas
-- Funciones variadicas y retornos con nombre
+- Funciones Anonimas, variadicas y retornos con nombre
 - Go Modules (Test Module)
-- Test unitarios, Code Coverage
-- Profiling
+- Test unitarios, Code Coverage, profiling
 - Mocks
-- Channels y Buffer
-- Waitgroup
+- Channels, Buffer y Waitgroup
 ```
 
