@@ -39,5 +39,6 @@ Curso de conocimientos intermedios de Go lang.
 - Mocks
 - Channels, Buffer y Waitgroup
 - Worker Pools
+- Multiplexacion
 ```
 
