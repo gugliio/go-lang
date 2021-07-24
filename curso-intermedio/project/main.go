@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -82,4 +85,56 @@ func (d *Dispatcher) Dispatch() {
 			}()
 		}
 	}
+}
+
+func (d *Dispatcher) Run() {
+	for i := 0; i < d.MaxWorkers; i++ {
+		worker := NewWorker(i, d.Workerpool)
+		worker.Start()
+	}
+	go d.Dispatch()
+}
+
+func RequestHandler(w http.ResponseWriter, req *http.Request, jobQueue chan Job) {
+	if req.Method != "POST" {
+		w.Header().Set("Allow", "POST")
+		w.WriteHeader(http.StatusMethodNotAllowed)
+	}
+	delay, err := time.ParseDuration(req.FormValue("delay"))
+	if err != nil {
+		http.Error(w, "Invalid Delay", http.StatusBadRequest)
+		return
+	}
+	value, err := strconv.Atoi(req.FormValue("value"))
+	if err != nil {
+		http.Error(w, "Invalid Value", http.StatusBadRequest)
+		return
+	}
+
+	name := req.FormValue("name")
+	if name == "" {
+		http.Error(w, "Invalid Name", http.StatusBadRequest)
+		return
+	}
+
+	job := Job{Name: name, Delay: delay, Number: value}
+	jobQueue <- job
+	w.WriteHeader(http.StatusCreated)
+}
+
+func main() {
+	const (
+		maxWorkers   = 4
+		maxQueueSize = 20
+		port         = ":8081"
+	)
+
+	jobQueue := make(chan Job, maxQueueSize)
+	dispatcher := NewDispatcher(jobQueue, maxWorkers)
+	dispatcher.Run()
+
+	http.HandleFunc("/fib", func(w http.ResponseWriter, r *http.Request) {
+		RequestHandler(w, r, jobQueue)
+	})
+	log.Fatal(http.ListenAndServe(port, nil))
 }
