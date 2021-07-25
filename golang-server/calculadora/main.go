@@ -13,9 +13,9 @@ func main() {
 	scanner.Scan()
 	operacion := scanner.Text()
 	fmt.Println(operacion)
-	valores := strings.Split(operacion, "+")
+	operador := "-"
+	valores := strings.Split(operacion, operador)
 	fmt.Println(valores)
-	fmt.Println(valores[0] + valores[1])
 
 	operador1, err1 := strconv.Atoi(valores[0])
 	if err1 != nil {
@@ -29,5 +29,16 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println(operador1 + operador2)
+	switch operador {
+	case "+":
+		fmt.Println(operador1 + operador2)
+	case "-":
+		fmt.Println(operador1 - operador2)
+	case "*":
+		fmt.Println(operador1 * operador2)
+	case "/":
+		fmt.Println(operador1 / operador2)
+	default:
+		fmt.Println("El operador no esta soportado")
+	}
 }
