@@ -52,4 +52,5 @@ Curso de servidores web en Golang.
 - Manejo basico errores
 - Calculadora 
 - Structs and Receivers
+- Lista de tareas
 ```
