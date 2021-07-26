@@ -53,4 +53,5 @@ Curso de servidores web en Golang.
 - Calculadora (Structs and Receivers)
 - Lista de tareas (Punteros, Append)
 - For, Range, Break, Continue
+- Mapas
 ```
