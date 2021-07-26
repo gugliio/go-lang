@@ -51,5 +51,6 @@ Curso de servidores web en Golang.
 - Scan, Split, Cast
 - Manejo basico errores
 - Calculadora (Structs and Receivers)
-- Lista de tareas (Punteros)
+- Lista de tareas (Punteros, Append)
+- For, Range, Break, Continue
 ```

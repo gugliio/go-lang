@@ -44,7 +44,26 @@ func main() {
 
 	t3 := &tasks{Nombre: "Completar curso Node Js", Descripcion: "Completar curso en una semana"}
 	listaTareas.agregarALista(t3)
-	fmt.Println(len(listaTareas.tasks))
-	listaTareas.eliminarDeLista(1)
-	fmt.Println(len(listaTareas.tasks))
+
+	/* 	for i := 0; i < len(listaTareas.tasks); i++ {
+		fmt.Println("Index", i, "Nombre", listaTareas.tasks[i].Nombre)
+	} */
+
+	/* for index, tarea := range listaTareas.tasks {
+		fmt.Println("Index", index, "Nombre", tarea.Nombre)
+	} */
+
+	for i := 0; i < 10; i++ {
+		if i == 5 {
+			break
+		}
+		fmt.Println(i)
+	}
+
+	for i := 0; i < 10; i++ {
+		if i == 5 {
+			continue
+		}
+		fmt.Println(i)
+	}
 }
