@@ -24,14 +24,20 @@ func TestHelloName(t *testing.T) {
 	}
 
 	t.Run("Say Hello with name", func(t *testing.T) {
-		got := HelloName("Ariel")
+		got := HelloName("Ariel", "")
 		want := "Hello, Ariel"
 		assertCorrectMessage(t, got, want)
 	})
 
 	t.Run("Say Hello without name", func(t *testing.T) {
-		got := HelloName("")
+		got := HelloName("", "")
 		want := "Hello, World"
+		assertCorrectMessage(t, got, want)
+	})
+
+	t.Run("in Spanish", func(t *testing.T) {
+		got := HelloName("Elodie", "Spanish")
+		want := "Hola, Elodie"
 		assertCorrectMessage(t, got, want)
 	})
 
