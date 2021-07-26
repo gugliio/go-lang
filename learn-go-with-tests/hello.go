@@ -9,3 +9,7 @@ func main() {
 func Hello() string {
 	return "Hello, world"
 }
+
+func HelloName(name string) string {
+	return "Hello, " + name
+}
