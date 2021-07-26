@@ -16,6 +16,22 @@ func (t *taskList) agregarALista(task *tasks) {
 	t.tasks = append(t.tasks, task)
 }
 
+func (t taskList) imprimirLista() {
+	for _, task := range t.tasks {
+		fmt.Println("Nombre", task.Nombre)
+		fmt.Println("Descripcion", task.Descripcion)
+	}
+}
+
+func (t taskList) imprimirListaCompletados() {
+	for _, task := range t.tasks {
+		if task.Completado == true {
+			fmt.Println("Nombre", task.Nombre)
+			fmt.Println("Descripcion", task.Descripcion)
+		}
+	}
+}
+
 func (t *taskList) eliminarDeLista(index int) {
 	t.tasks = append(t.tasks[:index], t.tasks[index+1:]...)
 }
@@ -40,30 +56,14 @@ func main() {
 		tasks: []*tasks{t1, t2},
 	}
 
-	fmt.Println(listaTareas.tasks[0])
+	// fmt.Println(listaTareas.tasks[0])
 
 	t3 := &tasks{Nombre: "Completar curso Node Js", Descripcion: "Completar curso en una semana"}
 	listaTareas.agregarALista(t3)
 
-	/* 	for i := 0; i < len(listaTareas.tasks); i++ {
-		fmt.Println("Index", i, "Nombre", listaTareas.tasks[i].Nombre)
-	} */
+	listaTareas.imprimirLista()
+	fmt.Println("------------------------------------------------")
 
-	/* for index, tarea := range listaTareas.tasks {
-		fmt.Println("Index", index, "Nombre", tarea.Nombre)
-	} */
-
-	for i := 0; i < 10; i++ {
-		if i == 5 {
-			break
-		}
-		fmt.Println(i)
-	}
-
-	for i := 0; i < 10; i++ {
-		if i == 5 {
-			continue
-		}
-		fmt.Println(i)
-	}
+	t1.marcarCompleta()
+	listaTareas.imprimirListaCompletados()
 }
