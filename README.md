@@ -54,4 +54,14 @@ Curso de servidores web en Golang.
 - Lista de tareas (Punteros, Append)
 - For, Range, Break, Continue
 - Mapas
+- Interfaces
+```
+
+## Go testing
+
+Practicas de testing en Golang a partir de:
+https://quii.gitbook.io/learn-go-with-tests/
+
+```bash
+/learn-go-with-tests/
 ```
