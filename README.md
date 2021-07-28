@@ -55,6 +55,7 @@ Curso de servidores web en Golang.
 - For, Range, Break, Continue
 - Mapas
 - Interfaces
+- Leer datos de paginas web
 ```
 
 ## Go testing
