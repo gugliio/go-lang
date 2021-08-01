@@ -57,6 +57,7 @@ Curso de servidores web en Golang.
 - Interfaces
 - Leer datos de paginas web
 - Consultar disponibilidad server
+- Go Routines y Channels
 ```
 
 ## Go testing
