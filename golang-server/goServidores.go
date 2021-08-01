@@ -15,13 +15,17 @@ func main() {
 		"http://facebook.com",
 	}
 	channel := make(chan string)
-
-	for _, server := range server {
-		go revisarServidor(server, channel)
-	}
-
-	for i := 0; i < len(server); i++ {
+	i := 0
+	for {
+		if i > 2 {
+			break
+		}
+		for _, server := range server {
+			go revisarServidor(server, channel)
+		}
+		time.Sleep(1 * time.Second)
 		fmt.Println(<-channel)
+		i++
 	}
 
 	tiempoFinal := time.Since(inicio)
