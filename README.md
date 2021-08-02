@@ -59,6 +59,8 @@ Curso de servidores web en Golang.
 - Consultar disponibilidad server
 - Go Routines y Channels
 - Web Server
+- Middlewares
+- Http Request
 ```
 
 ## Go testing
