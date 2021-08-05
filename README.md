@@ -74,4 +74,5 @@ https://quii.gitbook.io/learn-go-with-tests/
 - Integers (Add)
 - Iterations
 - Array y Slices
+- Struct, Methods, Interfaces
 ```
