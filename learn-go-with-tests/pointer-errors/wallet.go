@@ -1,13 +1,30 @@
 package pointer
 
+import "fmt"
+
+type Bitcoin float64
+
 type Wallet struct {
-	Amount float64 `json:"amout"`
+	Amount Bitcoin
 }
 
-func (w *Wallet) Balance() float64 {
-	return w.Amount
+type Stringer interface {
+	String() string
 }
 
-func (w *Wallet) Deposit(money float64) {
+func (w *Wallet) Balance() Bitcoin {
+	return (*w).Amount
+}
+
+func (w *Wallet) Deposit(money Bitcoin) {
+	fmt.Printf("address of balance in Deposit is %v \n", &w.Amount)
 	w.Amount += money
+}
+
+func (w *Wallet) Withdraw(amount Bitcoin) {
+	w.Amount -= amount
+}
+
+func (b *Bitcoin) String() string {
+	return fmt.Sprintf("%d BTC", b)
 }
