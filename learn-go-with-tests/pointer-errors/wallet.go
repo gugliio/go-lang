@@ -1,6 +1,9 @@
 package pointer
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type Bitcoin float64
 
@@ -21,8 +24,12 @@ func (w *Wallet) Deposit(money Bitcoin) {
 	w.Amount += money
 }
 
-func (w *Wallet) Withdraw(amount Bitcoin) {
+func (w *Wallet) Withdraw(amount Bitcoin) error {
+	if amount > w.Amount {
+		return errors.New("no tiene saldo suficiente para realizar esta accion")
+	}
 	w.Amount -= amount
+	return nil
 }
 
 func (b *Bitcoin) String() string {
