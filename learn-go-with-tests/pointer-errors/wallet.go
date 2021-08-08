@@ -19,6 +19,8 @@ func (w *Wallet) Balance() Bitcoin {
 	return (*w).Amount
 }
 
+var ErrInsufficientFunds = errors.New("no tiene saldo suficiente para realizar esta accion")
+
 func (w *Wallet) Deposit(money Bitcoin) {
 	fmt.Printf("address of balance in Deposit is %v \n", &w.Amount)
 	w.Amount += money
@@ -26,7 +28,7 @@ func (w *Wallet) Deposit(money Bitcoin) {
 
 func (w *Wallet) Withdraw(amount Bitcoin) error {
 	if amount > w.Amount {
-		return errors.New("no tiene saldo suficiente para realizar esta accion")
+		return ErrInsufficientFunds
 	}
 	w.Amount -= amount
 	return nil
