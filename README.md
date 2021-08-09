@@ -76,4 +76,5 @@ https://quii.gitbook.io/learn-go-with-tests/
 - Array y Slices
 - Struct, Methods, Interfaces
 - Pointers, Errors
+- Maps
 ```
