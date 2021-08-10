@@ -4,8 +4,9 @@ type Dictionary map[string]string
 type DictionaryErr string
 
 const (
-	ErrorNotFound = DictionaryErr("error en el diccionario")
-	ErrWordExists = DictionaryErr("la palabra que desea ingresar ya existe")
+	ErrorNotFound    = DictionaryErr("error en el diccionario")
+	ErrWordExists    = DictionaryErr("la palabra que desea ingresar ya existe")
+	ErrWordNotExists = DictionaryErr("la palabra que desea actualizar no existe")
 )
 
 func (d Dictionary) Search(parameter string) (string, error) {
@@ -28,6 +29,16 @@ func (d Dictionary) Add(parameter, value string) error {
 		return err
 	}
 
+	return nil
+}
+
+func (d Dictionary) Update(parameter, newValue string) error {
+	_, err := d.Search(parameter)
+
+	if err != nil {
+		return ErrWordNotExists
+	}
+	d[parameter] = newValue
 	return nil
 }
 
