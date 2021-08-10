@@ -1,11 +1,12 @@
 package main
 
-import "errors"
-
 type Dictionary map[string]string
+type DictionaryErr string
 
-var ErrorNotFound = errors.New("error en el diccionario")
-var ErrWordExists = errors.New("la palabra que desea ingresar ya existe")
+const (
+	ErrorNotFound = DictionaryErr("error en el diccionario")
+	ErrWordExists = DictionaryErr("la palabra que desea ingresar ya existe")
+)
 
 func (d Dictionary) Search(parameter string) (string, error) {
 	definition, ok := d[parameter]
@@ -28,4 +29,8 @@ func (d Dictionary) Add(parameter, value string) error {
 	}
 
 	return nil
+}
+
+func (e DictionaryErr) Error() string {
+	return string(e)
 }
