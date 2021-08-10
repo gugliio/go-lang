@@ -42,6 +42,16 @@ func (d Dictionary) Update(parameter, newValue string) error {
 	return nil
 }
 
+func (d Dictionary) Delete(parameter string) error {
+	_, err := d.Search(parameter)
+
+	if err != nil {
+		return ErrWordNotExists
+	}
+	delete(d, parameter)
+	return nil
+}
+
 func (e DictionaryErr) Error() string {
 	return string(e)
 }
