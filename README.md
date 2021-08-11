@@ -77,4 +77,5 @@ https://quii.gitbook.io/learn-go-with-tests/
 - Struct, Methods, Interfaces
 - Pointers, Errors
 - Maps
+- Inyeccion de dependencias
 ```
