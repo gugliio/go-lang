@@ -78,4 +78,5 @@ https://quii.gitbook.io/learn-go-with-tests/
 - Pointers, Errors
 - Maps
 - Inyeccion de dependencias
+- Mocking
 ```
