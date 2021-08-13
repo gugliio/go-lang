@@ -80,3 +80,11 @@ https://quii.gitbook.io/learn-go-with-tests/
 - Inyeccion de dependencias
 - Mocking
 ```
+
+## A Tour of Go
+Practicas basicas en Golang a partir de:
+https://tour.golang.org/
+
+```bash
+/a-tour-of-go/
+```
