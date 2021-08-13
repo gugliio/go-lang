@@ -6,8 +6,13 @@ import (
 	"math/rand"
 )
 
+// func add(a int, b int) == func add(a, b int)
 func add(a, b int) int {
 	return a + b
+}
+
+func swap(a, b string) (string, string) {
+	return a, b
 }
 
 func main() {
@@ -18,4 +23,6 @@ func main() {
 	fmt.Println("Pi number", math.Pi)
 
 	fmt.Println("Funcion con parametros no exportada", add(42, 13))
+	a, b := swap("Hola", "Ariel")
+	fmt.Println("Funcion con multiples resultados", a, b)
 }
