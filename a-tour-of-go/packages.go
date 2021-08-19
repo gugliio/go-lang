@@ -22,6 +22,7 @@ func split(sum int) (x, y int) {
 }
 
 var c, python, java bool
+var z, j int = 1, 2
 
 func main() {
 	fmt.Println("Random number using math/rand package", rand.Intn(100))
@@ -39,6 +40,12 @@ func main() {
 	//Funcion con nombre de variables ya definidas
 	fmt.Println(split(17))
 
+	//Variables Zero Values
 	var i int
 	fmt.Println(i, c, python, java)
+
+	//Variables inicializadas
+	var n1, n2, n3 = true, false, "no!"
+	fmt.Println(n1, n2, n3, z, j)
+
 }
