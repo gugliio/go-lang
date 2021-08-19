@@ -23,6 +23,8 @@ func main() {
 	fmt.Println("Pi number", math.Pi)
 
 	fmt.Println("Funcion con parametros no exportada", add(42, 13))
+
+	// Funcion con multiples resultados
 	a, b := swap("Hola", "Ariel")
 	fmt.Println("Funcion con multiples resultados", a, b)
 }
