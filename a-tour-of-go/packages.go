@@ -21,6 +21,8 @@ func split(sum int) (x, y int) {
 	return
 }
 
+var c, python, java bool
+
 func main() {
 	fmt.Println("Random number using math/rand package", rand.Intn(100))
 	fmt.Printf("Raiz cuadrada de un numero %g test\n", math.Sqrt(49))
@@ -36,4 +38,7 @@ func main() {
 
 	//Funcion con nombre de variables ya definidas
 	fmt.Println(split(17))
+
+	var i int
+	fmt.Println(i, c, python, java)
 }
