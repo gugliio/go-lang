@@ -95,4 +95,5 @@ https://tour.golang.org/
 - Tipos de valores
 - Zero values
 - Type Inference
+- Constantes
 ```
