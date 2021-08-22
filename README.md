@@ -87,13 +87,10 @@ https://tour.golang.org/
 
 ```bash
 /a-tour-of-go/
-- Packages
-- Imports
-- Exported Names
+- Packages, imports, exports
 - Funciones (simple y multiple resultado)
-- Variables
-- Tipos de valores
-- Zero values
+- Variables, constantes, tipos de valores, zero values
 - Type Inference
-- Constantes
+
+
 ```
