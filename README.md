@@ -94,4 +94,5 @@ https://tour.golang.org/
 - Variables
 - Tipos de valores
 - Zero values
+- Type Inference
 ```

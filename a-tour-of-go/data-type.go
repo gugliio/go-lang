@@ -15,4 +15,8 @@ func main() {
 	fmt.Printf("Type %T Value %v\n", ToBe, ToBe)
 	fmt.Printf("Type %T Value %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type %T Value %v\n", z, z)
+
+	// Inferencia de tipo de dato
+	v := 42
+	fmt.Printf("Type %T\n", v)
 }
