@@ -88,4 +88,10 @@ https://tour.golang.org/
 ```bash
 /a-tour-of-go/
 - Packages
+- Imports
+- Exported Names
+- Funciones (simple y multiple resultado)
+- Variables
+- Tipos de valores
+- Zero values
 ```

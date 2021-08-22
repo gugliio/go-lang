@@ -47,5 +47,4 @@ func main() {
 	//Variables inicializadas
 	var n1, n2, n3 = true, false, "no!"
 	fmt.Println(n1, n2, n3, z, j)
-
 }
