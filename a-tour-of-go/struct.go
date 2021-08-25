@@ -8,5 +8,11 @@ type Vertex struct {
 }
 
 func main() {
-	fmt.Println("Vertex", Vertex{1, 2})
+	v := Vertex{1, 2}
+	v.X = 4
+	fmt.Println("Vertex", v)
+
+	p := &v
+	p.X = 19
+	fmt.Println("Vertex", v)
 }
