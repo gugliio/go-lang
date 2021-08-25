@@ -30,4 +30,15 @@ func main() {
 	default:
 		fmt.Println("Falta un monton")
 	}
+
+	fmt.Println("-----------------")
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Buen dia")
+	case t.Hour() < 17:
+		fmt.Println("Buenas tardes")
+	default:
+		fmt.Println("Buenas noches")
+	}
 }
