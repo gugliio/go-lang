@@ -92,6 +92,5 @@ https://tour.golang.org/
 - Variables, constantes, tipos de valores, zero values
 - Type Inference
 - For, if, Else
-
-
 ```
+
