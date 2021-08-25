@@ -93,5 +93,6 @@ https://tour.golang.org/
 - Type Inference
 - For, if, Else, Switch, Defer
 - Punteros
+- Structs
 ```
 
