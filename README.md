@@ -91,6 +91,6 @@ https://tour.golang.org/
 - Funciones (simple y multiple resultado)
 - Variables, constantes, tipos de valores, zero values
 - Type Inference
-- For, if, Else, Switch
+- For, if, Else, Switch, Defer
 ```
 
