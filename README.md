@@ -94,5 +94,6 @@ https://tour.golang.org/
 - For, if, Else, Switch, Defer
 - Punteros, Structs
 - Arrays, Slices
+- Range
 ```
 
