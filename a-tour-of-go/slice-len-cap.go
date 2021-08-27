@@ -14,6 +14,12 @@ func main() {
 
 	s = s[2:]
 	printSlices(s)
+
+	var nilSlice []int
+	printSlices(nilSlice)
+	if nilSlice == nil {
+		fmt.Println("Nil Slice")
+	}
 }
 
 func printSlices(s []int) {
