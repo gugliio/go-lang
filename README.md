@@ -93,8 +93,7 @@ https://tour.golang.org/
 - Type Inference
 - For, if, Else, Switch, Defer
 - Punteros, Structs
-- Arrays, Slices
-- Range
-- Maps
+- Arrays, Slices, Range, Maps
+- Function Values, Closures
 ```
 
