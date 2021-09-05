@@ -95,5 +95,6 @@ https://tour.golang.org/
 - Punteros, Structs
 - Arrays, Slices, Range, Maps
 - Function Values, Closures
+- Methods
 ```
 
