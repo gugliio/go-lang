@@ -54,4 +54,5 @@ func main() {
 	fmt.Printf("Before scaling: %+v, Abs: %v\n", v4, v4.Abs())
 	v4.Scale(5)
 	fmt.Printf("After scaling: %+v, Abs: %v\n", v4, v4.Abs())
+
 }
