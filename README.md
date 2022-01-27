@@ -1,6 +1,6 @@
 
 # Go Lang
-
+### 2021
 Cursos de Go Lang (2021)
 
 ## Curso Go Bases
@@ -98,3 +98,5 @@ https://tour.golang.org/
 - Methods
 ```
 
+### 2022
+Cursos de Go Lang (2022)
