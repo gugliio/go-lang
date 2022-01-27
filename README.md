@@ -105,15 +105,5 @@ Curso de udemy: Master Go (Golang) Programming:The Complete Go Bootcamp 2022
 
 ```bash
 /master-go/
-- Packages, imports, exports
-- Funciones (simple y multiple resultado)
-- Variables, constantes, tipos de valores, zero values
-- Type Inference
-- For, if, Else, Switch, Defer
-- Punteros, Structs
-- Arrays, Slices, Range, Maps
-- Function Values, Closures
-- Methods
+- Application Structure
 ```
-
-
