@@ -61,4 +61,13 @@ func main() {
 	var names string
 	var done bool
 	fmt.Println(value, price, names, done)
+
+	// comments
+	// This is a new comment
+
+	// declaring a new variable of type int
+	/*
+		 age := 18 // short- declaration - inline deaclaration
+		_ = age
+	*/
 }
