@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	// Variables declaration
+
 	var age int = 30
 	fmt.Println("Age:", age)
 
@@ -15,6 +17,8 @@ func main() {
 	name = "Andrei"
 	name1 := "John"
 	_ = name1
+
+	// Multiples declaration
 
 	car, cost := "Audi", 5000
 	fmt.Println(car, cost)
@@ -42,6 +46,19 @@ func main() {
 
 	fmt.Println(i, j)
 
+	// Types and zero values
 	sum := 5 + 2.3
 	fmt.Println(sum)
+
+	var ab = 4
+	var bc = 5.2
+
+	ab = int(bc)
+	fmt.Println(ab)
+
+	var value int
+	var price float64
+	var names string
+	var done bool
+	fmt.Println(value, price, names, done)
 }
