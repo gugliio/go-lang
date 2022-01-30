@@ -34,5 +34,4 @@ func formatter() {
 
 	// Print type
 	fmt.Printf("Radius is type %T\n", radius)
-
 }
