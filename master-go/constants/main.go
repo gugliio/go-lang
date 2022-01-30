@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	const days int = 74
@@ -31,4 +33,15 @@ func main() {
 	)
 
 	fmt.Println(min, min2, min3)
+
+	//Constants rules
+	// const temp int = 100
+	// temp = 50
+
+	// Not initiate in time on runtime
+	// const power = math.Pow(2, 3)
+
+	//Not use a var to initialize a const
+	//	t := 5
+	//	const tc = t
 }
