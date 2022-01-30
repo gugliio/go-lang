@@ -70,4 +70,5 @@ func main() {
 		 age := 18 // short- declaration - inline deaclaration
 		_ = age
 	*/
+
 }
